@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .box {
+            margin-top: 40px;
+            height: 900px;
+            width: 1890px;
+            display: block;
+            margin: auto;
+            border: 3px solid #ffc0cb;
+            text-align: center;
+            background-color: pink;
+            border-radius: 24px;
+            position: relative;
+        }
+        #yes {
+            color:white;
+            background-color: rgb(228, 7, 177);
+            margin: 150px;
+            padding: 10px;
+            border: 10px solid rgb(146, 27, 118);
+            border-radius: 50px;
+            width: 350px;
+            height: 100px;
+            cursor: pointer;
+        }
+        #no {
+            color:white;
+            background-color: rgb(40, 65, 208);
+            margin: 150px;
+            padding: 10px;
+            border: 10px solid rgb(52, 128, 191);
+            border-radius: 50px;
+            width: 350px;
+            height: 100px;
+            cursor: pointer;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 id="head">I LOVE YOU ALOTTT KAD AND YESS I LOVE YOU MOREEE!🤍</h1>
+        <button id="yes" onclick="fn()">I love you too net andd Yesss you love me more baby💗</button>
+        <button id="no" onclick="fx()">I love you too net andd Noo i love you moree💛</button>
+    </div>
+</body>
+<script>
+    const yesbtn = document.getElementById("yes");
+    const heading = document.getElementById("head");
+
+    function fn(){
+        heading.innerHTML = "HEEHEE I KNOW I LOVE YOU MOREE MWUAHH 😘😘";
+    }
+
+    function fx(){
+        const btn = document.getElementById('no');
+        const x = Math.floor(Math.random() * 200) + 1; // Adjusted the random range to keep the button within the container
+        const y = Math.floor(Math.random() * 200) + 1; // Adjusted the random range to keep the button within the container
+        btn.style.top = x + "px";
+        btn.style.left = y + "px";
+    }
+</script>
+</html>
